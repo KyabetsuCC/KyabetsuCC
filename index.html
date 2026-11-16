@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>kyabetsu · 个人主页</title>
+<meta name="description" content="kyabetsu 的个人主页">
+<style>
+  :root{
+    --bg:#0b0d10; --card:#14171c; --text:#e8eaed; --muted:#9aa3ad;
+    --line:#242a31; --accent:#7cc4ff;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f6f6f4; --card:#fff; --text:#16181c; --muted:#5f6670;
+           --line:#e3e4e6; --accent:#0b74c4; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; min-height:100dvh; background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+    display:flex; align-items:center; justify-content:center; padding:24px;
+    background-image:radial-gradient(60% 50% at 50% 0%,rgba(124,196,255,.16),transparent 70%);
+  }
+  main{width:100%; max-width:420px}
+  .avatar{
+    width:72px;height:72px;border-radius:22px;display:grid;place-items:center;
+    background:linear-gradient(135deg,#7cc4ff,#8f7cff);color:#08111a;
+    font-size:30px;font-weight:700;letter-spacing:.5px;margin-bottom:18px;
+  }
+  h1{margin:0 0 6px;font-size:26px;letter-spacing:-.02em}
+  .tag{margin:0 0 18px;color:var(--muted);font-size:15px;line-height:1.6}
+  .links{display:grid;gap:10px;margin-top:22px}
+  a.link{
+    display:flex;align-items:center;justify-content:space-between;gap:10px;
+    padding:14px 16px;border:1px solid var(--line);border-radius:14px;
+    background:var(--card);color:var(--text);text-decoration:none;font-size:15px;
+    transition:transform .15s ease, border-color .15s ease;
+  }
+  a.link:hover{transform:translateY(-1px);border-color:var(--accent)}
+  a.link span.arrow{color:var(--muted);font-size:13px}
+  footer{margin-top:26px;color:var(--muted);font-size:12.5px}
+</style>
+</head>
+<body>
+<main>
+  <div class="avatar">K</div>
+  <h1>kyabetsu</h1>
+  <p class="tag">【一句话介绍：比如 一个在这里折腾小项目的人】</p>
+
+  <div class="links">
+    <a class="link" href="https://github.com/" target="_blank" rel="noreferrer">
+      <span>GitHub</span><span class="arrow">↗</span>
+    </a>
+    <a class="link" href="https://t.me/" target="_blank" rel="noreferrer">
+      <span>Telegram</span><span class="arrow">↗</span>
+    </a>
+    <a class="link" href="mailto:you@example.com">
+      <span>Email</span><span class="arrow">↗</span>
+    </a>
+  </div>
+
+  <footer>Hosted on kyabetsu.loc.cc · Powered by Yunamo</footer>
+</main>
+</body>
+</html>
